@@ -1,0 +1,29 @@
+snippet ent "Entity" b
+entity ${1:name} "${2:label}" {
+	key {
+		$0
+	}
+}
+endsnippet
+
+snippet comp "Compartment" b
+compartment "${1:label}" {
+	$0
+}
+endsnippet
+
+snippet attr "Attribute" b
+attr ${1:name} "${2:label}"${3:+<->}: ${4:string(20)}${5:[0,*]}
+$0
+endsnippet
+
+snippet enum "Enum" b
+enum ${1:name} {
+	$0
+}
+endsnippet
+
+snippet elit "Enum literal" b
+${1:name} "${2:${1/(.).*/\u$1/}}" "${3:$1}"
+$0
+endsnippet
