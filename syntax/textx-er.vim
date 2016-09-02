@@ -15,7 +15,9 @@ syntax keyword textXERType
       \ string
       \ int
       \ float
+      \ decimal
       \ time
+      \ date
       \ money
       \ bool
 
