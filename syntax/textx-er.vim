@@ -9,7 +9,11 @@ syntax keyword textXERKeyword
       \ attr
       \ applies
       \ to
+      \ constraint
+      \ type
 
+syntax match textXEROperator "\v\+"
+syntax match textXEROperator "\v\#"
 
 syntax keyword textXERType
       \ string
@@ -43,6 +47,7 @@ highlight default link textXERComment Comment
 highlight default link textXERString String
 highlight default link textXERType Type
 highlight default link textXERKeyword Keyword
+highlight default link textXEROperator Keyword
 highlight default link textXERMult Statement
 
 
